@@ -22,4 +22,6 @@ if __name__ == "__main__":
    message = input("Input a message you want to encrypt in all caps:")
    keyword = input("Please input a keyword to encrypt your message in all caps:")
    key = generateKey(message, keyword)
+   encrypted_message = encryption(message, key)
+
 #Print the encrypted message

@@ -1,11 +1,11 @@
 #Define the function to generate key and message
 def generateKey(message, key):
     key = list(key)
-    if len(message) == len(key)
+    if len(message) == len(key):
         return(key)
     else:
-        for i in range(len(message) - len(key))
-         key.append(key[i % len(key)]x)
+        for i in range(len(message) - len(key)):
+         key.append(key[i % len(key)])
     return("" . join(key))
 
 #Encrypt the message using the viginere cipher
@@ -15,7 +15,7 @@ def encryption(message, key):
       number_equivalent = (ord(message[i])+ ord(key[i])) %26
       number_equivalent += ord('A')
       encrypted_text.append(chr(number_equivalent))
-    return("" . join(encrypted_text))
+      return("". join(encrypted_text))
 
 #Ask the user to enter a message and a key in all caps
 if __name__ == "__main__": 

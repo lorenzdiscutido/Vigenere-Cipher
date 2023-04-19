@@ -8,7 +8,6 @@ def generateKey(message, key):
          key.append(key[i % len(key)]x)
     return("" . join(key))
 
-#Ask the user to enter a message and a key in all caps
 #Encrypt the message using the viginere cipher
 def encryption(message, key):
    encrypted_text = []
@@ -17,5 +16,10 @@ def encryption(message, key):
       number_equivalent += ord('A')
       encrypted_text.append(chr(number_equivalent))
     return("" . join(encrypted_text))
-      
+
+#Ask the user to enter a message and a key in all caps
+if __name__ == "__main__": 
+   message = input("Input a message you want to encrypt in all caps:")
+   keyword = input("Please input a keyword to encrypt your message in all caps:")
+   key = generateKey(message, keyword)
 #Print the encrypted message

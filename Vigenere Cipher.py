@@ -13,5 +13,9 @@ def generateKey(message, key):
 def encryption(message, key):
    encrypted_text = []
    for i in range(len(message)):
+      number_equivalent = (ord(message[i])+ ord(key[i])) %26
+      number_equivalent += ord('A')
+      encrypted_text.append(chr(number_equivalent))
+    return("" . join(encrypted_text))
       
 #Print the encrypted message

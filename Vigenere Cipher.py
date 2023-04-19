@@ -25,3 +25,5 @@ if __name__ == "__main__":
    encrypted_message = encryption(message, key)
 
 #Print the encrypted message
+print("Message is", message)
+print("Encrypted message is", encrypted_message)
